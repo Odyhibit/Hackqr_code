@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Encoder & Decoder</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div class="container">
+        <h1>Hackqr Code</h1>
+        <h2>Encode and Decode Messages</h2>
+        <p>Looks a little like a QR code, but it's just plain binary.</p>
+        <h3>Encode a Message</h3>
+        <input type="text" id="textInput" placeholder="Enter secret message">
+        <button onclick="encodeMessage()">Generate Image</button>
+        <canvas id="encodeCanvas"></canvas>
+        <a id="downloadLink" style="display:none;">Download Image</a>
+        <h3>Decode an Image</h3>
+        <input type="file" id="fileInput" accept="image/*">
+        <canvas id="decodeCanvas" style="display:none;"></canvas>
+        <p id="output"></p>
+    </div>
+</body>
+    <script src="HackqrCode.js"></script>
+</html>
