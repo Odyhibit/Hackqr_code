@@ -33,7 +33,7 @@
             const rows = makeMultiple(Math.ceil((message.length * 8) / cols), 4);
             message = padToMultipleOf(message, cols * 2);
             const binStr = unicodeToBinary(message);
-            console.log(binStr, cols, rows, binStr.length,message, message.length);
+            //console.log(binStr, cols, rows, binStr.length,message, message.length);
             const scale = 20;
 
             const binMatrix = Array.from({ length: rows }, () => Array(cols).fill(0));
