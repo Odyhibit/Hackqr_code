@@ -83,3 +83,14 @@ a:hover {
     color: #0056b3;
     text-decoration: underline;
 }
+
+#output{
+    margin-top: 20px;
+    font-size: 1.4rem;
+    color: #333;
+    background: #e8e9ea;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
