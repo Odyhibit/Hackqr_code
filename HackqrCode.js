@@ -1,5 +1,6 @@
-// --- utilities --------------------------
-
+// ----------------------------------------
+// utilities
+// ----------------------------------------
 const encoder = new TextEncoder();
 const utf8Decoder = new TextDecoder();
 
@@ -25,8 +26,8 @@ function roundUp(n, factor) {
 }
 
 // ----------------------------------------
-
 // ENCODE
+// ----------------------------------------
 function encodeMessage() {
   let msg = document.getElementById('textInput').value;
   if (!msg) return;
@@ -86,12 +87,10 @@ function encodeMessage() {
   link.style.display = 'block';
   link.textContent   = 'Download Encoded Image';
 }
+
 // ————————————————————————————————————————————
 // DECODE
 // ————————————————————————————————————————————
-// put this at top-level so you don’t re-create it each time
-
-
 document.getElementById('fileInput')
   .addEventListener('change', function(ev) {
     const file = ev.target.files[0];
